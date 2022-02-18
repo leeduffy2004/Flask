@@ -10,14 +10,15 @@ def home():
         return render_template('login.html')
     else:
         return "Hello Boss!"
+
     
-    @app.route('/login', methods=['POST'])
-    def do_admin_login():
-        if request.form['password'] == 'password' and request.form['username'] == 'admin':
+@app.route('/login', methods=['POST'])
+def do_admin_login():
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
             session['logged_in'] = True
-        else:
-            flash('wrong password!')
-            return home()
+    else:
+        flash('wrong password!')
+        return home()
 
 @app.route("/logout")
 def logout():
