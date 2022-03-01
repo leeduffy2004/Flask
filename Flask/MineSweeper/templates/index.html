@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        { %block content %} 
+        <!-- nav bar -->
+        <nav class="navbar navbar=-expand-md navbar-light bg dark">
+            <div class="d-flex d-block felx-row mx-auto mx-0">
+                <a href="#" class="navbar-brand text-light">Minesweeper</a>
+            </div>
+        </nav>
+        <!-- Content -->
+        <div class="container">
+            <!-- Staus Bar -->
+            <nav clas="nav nav-pills nav-fill mt-3 bg-success rounded">
+                <div class="nav-item">
+                    <i class="fa fa-flag fa-3x text-danger"></i>
+                    <h2 id="num_of_flags_remaining" class="d-inline pl-4">{{ num_of_flags }}</h2>
+                </div>
+            </nav>
+        </div>
+    </body>
+</html>
