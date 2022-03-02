@@ -1,11 +1,11 @@
 import random
 
 
-class Minsweeper:
+class Minesweeper:
     def __init__(self, difficulty):
         self.difficulty = difficulty
         self.mines = self.num_of_mines()
-        self.flags =self.mines()
+        self.flags = self.mines
         self.mine_locations = []
 
         self.revealed_tiles = []
